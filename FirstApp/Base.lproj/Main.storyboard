@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24128" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24063"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FirstApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z76-nU-qlx">
+                                <rect key="frame" x="46.666666666666657" y="259" width="300" height="334"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y10-Wk-dUq">
+                                        <rect key="frame" x="52.333333333333343" y="265" width="75" height="39"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hdg-5U-DIy">
+                                        <rect key="frame" x="172.33333333333334" y="265" width="75" height="39"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Umz-Wb-tK8">
+                                        <rect key="frame" x="112.66666666666669" y="150" width="74.333333333333314" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Hdg-5U-DIy" secondAttribute="bottom" constant="30" id="4Ej-dg-CMJ"/>
+                                    <constraint firstAttribute="height" constant="334" id="FdC-m0-kf0"/>
+                                    <constraint firstItem="y10-Wk-dUq" firstAttribute="centerX" secondItem="Z76-nU-qlx" secondAttribute="centerX" constant="-60" id="Qfc-yc-pf5"/>
+                                    <constraint firstAttribute="bottom" secondItem="y10-Wk-dUq" secondAttribute="bottom" constant="30" id="SG7-Io-vJ9"/>
+                                    <constraint firstItem="Umz-Wb-tK8" firstAttribute="centerY" secondItem="Z76-nU-qlx" secondAttribute="centerY" id="dat-UC-29n"/>
+                                    <constraint firstAttribute="width" constant="300" id="ltZ-xo-6NX"/>
+                                    <constraint firstItem="Hdg-5U-DIy" firstAttribute="centerX" secondItem="Z76-nU-qlx" secondAttribute="centerX" constant="60" id="mug-nF-l1N"/>
+                                    <constraint firstItem="Umz-Wb-tK8" firstAttribute="centerX" secondItem="Z76-nU-qlx" secondAttribute="centerX" id="nAt-BX-LEe"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Z76-nU-qlx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Rkn-Ti-e9c"/>
+                            <constraint firstItem="Z76-nU-qlx" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="UhX-jy-ntb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttonReset" destination="Hdg-5U-DIy" id="JY6-jQ-d4o"/>
+                        <outlet property="buttonStart" destination="y10-Wk-dUq" id="85w-Yf-H2v"/>
+                        <outlet property="cardView" destination="Z76-nU-qlx" id="X6X-Tq-YoD"/>
+                        <outlet property="timeLabel" destination="Umz-Wb-tK8" id="I2k-I6-SDp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="43.511450381679388" y="-242.25352112676057"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
